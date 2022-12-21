@@ -1,1 +1,4 @@
 *.swp
+*.cmp
+*.out
+*.tst
