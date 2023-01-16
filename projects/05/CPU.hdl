@@ -40,9 +40,6 @@ CHIP CPU {
 
     PARTS:
 
-    // 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15
-    // 15 14 13 12 11 10 09 08 07 06 05 04 03 02 01 00
-
     Mux16(a=Aoutput, b=inM, sel=instruction[12], out=y);
     ALU(x=DRegister, y=y, zx=instruction[11], nx=instruction[10], zy=instruction[9], ny=instruction[8], f=instruction[7], no=instruction[6], out=ALUoutput, out=outM, zr=zr, ng=ng);
 
